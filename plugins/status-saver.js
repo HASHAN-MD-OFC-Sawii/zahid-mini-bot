@@ -1,5 +1,4 @@
-const { cmd } = require("../aliraza");
-
+const { cmd } = require("../zaidi");
 cmd({
   on: "body",
   react: "📤",
