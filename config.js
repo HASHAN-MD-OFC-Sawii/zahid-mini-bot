@@ -16,9 +16,9 @@ module.exports = {
     // 2. INFORMATIONS DU BOT
     // ===========================================================
     PREFIX: process.env.PREFIX || '.',
-    OWNER_NUMBER: process.env.OWNER_NUMBER || '+923237045919', // Mettez votre numéro ici
-    BOT_NAME: "𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪",
-    BOT_FOOTER: '© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʑɑ͢ı֟፝𝛛֟ı֟፝-ϻ֟͡𝛛֟',
+    OWNER_NUMBER: process.env.OWNER_NUMBER || '+94713457207', // Mettez votre numéro ici
+    BOT_NAME: "𝐇𝐀𝐒𝐇𝐔-𝐌𝐃",
+    BOT_FOOTER: '© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀꜱʜᴜ-ᴍᴅ',
     
     // Mode de travail : public, private, group, inbox
     WORK_TYPE: process.env.WORK_TYPE || "public", 
@@ -61,8 +61,8 @@ module.exports = {
     // ===========================================================
     // 7. IMAGES & LIENS
     // ===========================================================
-    IMAGE_PATH: 'https://files.catbox.moe/himp43.jpg',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBhyp7BfxoEclHqI33Y',
+    IMAGE_PATH: 'https://files.catbox.moe/vbo0vq.png',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VazhnLzK0IBdwXG4152o',
     
     // ===========================================================
     // 8. EXTERNAL API (Optionnel)
