@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>👑 MR HASHUU - GLOBAL BOT NETWORK 👑</title>
+    <title>HASHU-FREE-BOT</title>
     <!-- Premium Tailwind CSS & Custom Luxury Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -177,9 +177,9 @@
                 <div class="neon-box-container relative">
                     <select id="serverSelect" class="w-full bg-black/80 text-zinc-300 outline-none px-4 py-2.5 rounded-[0.9rem] font-semibold text-[11px] cursor-pointer appearance-none pr-10">
                         <option value="none" selected disabled>SELECT SERVER</option>
-                        <option value="1" id="opt-s1">SERVER 01 - FRANKFURT (0/10)</option>
-                        <option value="2" id="opt-s2">SERVER 02 - SINGAPORE (0/20)</option>
-                        <option value="3" id="opt-s3">SERVER 03 - OREGON (0/30)</option>
+                        <option value="1" id="opt-s1">SERVER 01 - STATUS (0/10)</option>
+                        <option value="2" id="opt-s2">SERVER 02 - STATUS (0/20)</option>
+                        <option value="3" id="opt-s3">SERVER 03 - STATUS (0/30)</option>
                     </select>
                     <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-zinc-600 text-[8px]">▼</div>
                 </div>
@@ -187,7 +187,7 @@
             
             <!-- PURE WHITE ULTRA PREMIUM BUTTON -->
             <button onclick="getPairCode()" class="btn-premium-white w-full text-black font-extrabold text-[10px] py-3 rounded-xl tracking-wider uppercase select-none mt-1">
-                Request Key Block
+                GET PAIR CODE
             </button>
         </div>
 
@@ -398,16 +398,16 @@
 
                 botCounter.innerText = currentGlobalBotCount.toLocaleString();
 
-                document.getElementById('opt-s1').innerText = `SERVER 01 - FRANKFURT (${currentGlobalBotCount}/10)${currentGlobalBotCount >= 10 ? ' [FULL]' : ''}`;
-                document.getElementById('opt-s2').innerText = `SERVER 02 - SINGAPORE (${currentGlobalBotCount}/20)${currentGlobalBotCount >= 20 ? ' [FULL]' : ''}`;
-                document.getElementById('opt-s3').innerText = `SERVER 03 - OREGON (${currentGlobalBotCount}/30)${currentGlobalBotCount >= 30 ? ' [FULL]' : ''}`;
+                document.getElementById('opt-s1').innerText = `SERVER 01 - STATUS (${currentGlobalBotCount}/10)${currentGlobalBotCount >= 10 ? ' [FULL]' : ''}`;
+                document.getElementById('opt-s2').innerText = `SERVER 02 - STATUS (${currentGlobalBotCount}/20)${currentGlobalBotCount >= 20 ? ' [FULL]' : ''}`;
+                document.getElementById('opt-s3').innerText = `SERVER 03 - STATUS (${currentGlobalBotCount}/30)${currentGlobalBotCount >= 30 ? ' [FULL]' : ''}`;
 
                 if (currentGlobalBotCount > 30 && !document.getElementById('opt-s4')) {
                     const newServerOpt = document.createElement('option');
                     newServerOpt.value = "4";
                     newServerOpt.id = "opt-s4";
                     newServerOpt.className = "text-cyan-400 font-bold";
-                    newServerOpt.innerText = `SERVER 04 - AUTO SCALED CORE (ONLINE)`;
+                    newServerOpt.innerText = `SERVER 04 - NOW (ONLINE)`;
                     dropdown.appendChild(newServerOpt);
                 }
             } catch (error) {
