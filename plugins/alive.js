@@ -28,12 +28,12 @@ cmd({
 
         // 🎨 Fancy Output with Box Design
         const msg = await conn.sendMessage(from, {
-            text: `ᥫ᭡𝛧𝜜𝛪𝐷𝛪 𝛭𝐷 𝐵𝜣𝑇 𓆩 𝐀𝐋𝐈𝐕𝐄 𓆪 ⏤͟͟͞͞🧸🌷`
+            text: `ᥫ᭡𝐇𝐀𝐒𝐇𝐔-𝐌𝐃 𝐁𝐎𝐓 𓆩 𝐀𝐋𝐈𝐕𝐄 𓆪 ⏤͟͟͞͞🧸🌷`
         }, { quoted: mek });
 
         await sleep(1500);
 
-        const display = `╭═══ 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪 ═══⊷
+        const display = `╭═══ 𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪 ═══⊷
 ┃❃╭──────────────
 ┃❃│ 👤 ${pushname}
 ┃❃│ ⏰ ${currentTime}
@@ -43,7 +43,7 @@ cmd({
 ┃❃╰───────────────
 ╰═════════════════⊷
 
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʑɑ͢ı֟፝𝛛֟ı֟፝-ϻ֟͡𝛛֟`;
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀꜱʜᴜ-ᴍᴅ`;
 
         await conn.relayMessage(from, {
             protocolMessage: {
@@ -59,15 +59,15 @@ cmd({
 
         // Send Image with Newsletter
         await conn.sendMessage(from, {
-            image: { url: "https://up6.cc/2026/05/177971006919991.png" },
+            image: { url: "https://files.catbox.moe/vbo0vq.png" },
             caption: `✨ ${pushname}, Bot is Active!`,
             contextInfo: {
                 forwardingScore: 999,
                 isForwarded: true,
                 mentionedJid: [m.sender],
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: "120363423196146172@newsletter",
-                    newsletterName: "𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪",
+                    newsletterJid: "120363395674230271@newsletter",
+                    newsletterName: "𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪",
                     serverMessageId: 2,
                 },
             },
