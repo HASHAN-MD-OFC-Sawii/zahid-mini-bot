@@ -47,9 +47,9 @@ cmd({
         // 🎨 Status with funny reply
         const status = `╭═══ 👑 ALIVE ═══⊷
 ┃❃╭──────────────
-┃❃│ ${randomFunny}
+┃❃│ 𝐕𝐄𝐑𝐒𝐈𝐎𝐍 2.0.0
 ┃❃│ ──────────────
-┃❃│ 🤖 Bot: 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪
+┃❃│ 🤖 Bot: 𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪
 ┃❃│ 📊 Mode: ${config.WORK_TYPE || 'public'}
 ┃❃│ 🔣 Prefix: ${config.PREFIX || '.'}
 ┃❃│ 📦 Commands: ${totalCmds}
@@ -58,7 +58,7 @@ cmd({
 ┃❃╰───────────────
 ╰═════════════════⊷
 
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪`;
+> © 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐇𝐀𝐒𝐇𝐔-𝐌𝐃`;
 
         await conn.sendMessage(from, {
             text: status,
