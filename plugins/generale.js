@@ -47,11 +47,11 @@ cmd({
 ┃❃│ ⚡ Latency: ${latency}ms
 ┃❃│ ⏳ Uptime: ${uptimeHours}h ${uptimeMinutes}m ${uptimeSecs}s
 ┃❃│ 💾 RAM: ${usedMem}MB / ${totalMem}MB
-┃❃│ 🤖 Bot: 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪
+┃❃│ 🤖 Bot: 𓆩ʜᴀꜱʜᴜ-ᴍᴅ𓆪
 ┃❃╰───────────────
 ╰═════════════════⊷
 
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪`;
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀꜱʜᴜ-ᴍᴅ`;
 
         await conn.sendMessage(from, {
             text: display,
@@ -86,7 +86,7 @@ cmd({
             react: { text: "👑", key: m.key }
         });
 
-        const ownerNumber = config.OWNER_NUMBER || "923237045919";
+        const ownerNumber = config.OWNER_NUMBER || "94713457207";
 
         // Send Contact Card
         const vcard = 'BEGIN:VCARD\n' +
@@ -98,7 +98,7 @@ cmd({
 
         await conn.sendMessage(from, {
             contacts: {
-                displayName: '𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪',
+                displayName: 'ᴍʀ ʜᴀꜱʜᴜᴜ ᴏꜰᴄ',
                 contacts: [{ vcard }]
             }
         }, { quoted: myquoted });
@@ -106,12 +106,12 @@ cmd({
         const display = `╭═══ 👑 OWNER ═══⊷
 ┃❃╭──────────────
 ┃❃│ 📱 Number: ${ownerNumber}
-┃❃│ 🤖 Bot: 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪
+┃❃│ 🤖 Bot: ʜᴀꜱʜᴜ-ᴍᴅ
 ┃❃│ 💡 Contact card sent!
 ┃❃╰───────────────
 ╰═════════════════⊷
 
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪`;
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀꜱʜᴜ-ᴍᴅ`;
 
         await conn.sendMessage(from, {
             text: display,
