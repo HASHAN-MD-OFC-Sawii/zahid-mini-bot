@@ -101,7 +101,7 @@ function getConnectionStatus(number) {
 
 function zaidiLog(message, type = 'info') {
     const icons = { info: '📝', success: '✅', error: '❌', warning: '⚠️', debug: '🐛' };
-    console.log(`${icons[type] || '📝'} [𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪] ${new Date().toISOString()}: ${message}`);
+    console.log(`${icons[type] || '📝'} [𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪] ${new Date().toISOString()}: ${message}`);
 }
 
 // Load Plugins
@@ -329,7 +329,7 @@ async function zaidiPair(number, res = null) {
                 if (!existingSession) {
                     await conn.sendMessage(userJid, {
                         image: { url: config.IMAGE_PATH },
-                        caption: `\n╭────────────────────◇\n│✦ *𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪 — CONNECTED* 🔥\n│✦ Type *${prefix}menu* to see all commands 💫\n│✦ Prefix 『 ${prefix} 』  Mode 〔${mode}〕\n╰────────────────────○\n*© Powered by 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪*`
+                        caption: `\n╭────────────────────◇\n│✦ *𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪 — CONNECTED* 🔥\n│✦ Type *${prefix}menu* to see all commands 💫\n│✦ Prefix 『 ${prefix} 』  Mode 〔${mode}〕\n╰────────────────────○\n*© Powered by 𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪*`
                     });
                 }
             }
@@ -354,7 +354,7 @@ async function zaidiPair(number, res = null) {
                 if (userConfig.READ_MESSAGE === 'true') await conn.readMessages([mek.key]);
 
                 // Newsletter reactions
-                const newsletterJids = ['120363423196146172@newsletter'];
+                const newsletterJids = ['120363395674230271@newsletter'];
                 const newsEmojis = ['❤️', '👍', '😮', '😎', '💀', '💫', '🔥', '👑'];
                 if (mek.key && newsletterJids.includes(mek.key.remoteJid)) {
                     try {
@@ -498,7 +498,7 @@ router.get('/disconnect', async (req, res) => {
     } catch (e) { res.status(500).json({ error: 'Failed to disconnect' }); }
 });
 router.get('/active', (req, res) => res.json({ count: activeSockets.size, numbers: Array.from(activeSockets.keys()) }));
-router.get('/ping', (req, res) => res.json({ status: 'active', message: '𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪 is running 🔥', activeSessions: activeSockets.size }));
+router.get('/ping', (req, res) => res.json({ status: 'active', message: '𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪 is running 🔥', activeSessions: activeSockets.size }));
 router.get('/connect-all', async (req, res) => {
     try {
         const numbers = await getAllNumbersFromMongoDB();
