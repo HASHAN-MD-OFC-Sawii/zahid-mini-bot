@@ -20,7 +20,7 @@ const funnyReplies = [
 ];
 
 cmd({
-    pattern: "alive",
+    pattern: "alive2",
     alias: ["status", "live"],
     desc: "Check uptime and system status",
     category: "main",
