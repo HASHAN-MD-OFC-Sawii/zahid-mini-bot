@@ -1,467 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>👑 HASHU-MD 👑</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-/* ===============================
-   RGB NEON RAINBOW EDITION
-   Full Replacement CSS
-=============================== */
-
-/* =========================
-   BLACK UI + RGB TEXT ONLY
-========================= */
-
-:root{
-    --rgb-speed:16s;
-}
-
-/* reset */
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-
-/* rainbow text animation */
-@keyframes rgbText{
-    0%{background-position:0%}
-    100%{background-position:400%}
-}
-
-/* body */
-body{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-family:'Poppins',sans-serif;
-    background:#000;
-    color:#fff;
-}
-
-/* card */
-.card{
-    width:90%;
-    max-width:400px;
-    background:#000;
-    border-radius:22px;
-    padding:28px 22px;
-    text-align:center;
-    border:1px solid #111;
-
-    box-shadow:
-        0 0 20px rgba(255,255,255,0.05);
-}
-
-/* RGB TEXT STYLE */
-.rgb-text{
-    background:linear-gradient(
-        90deg,
-        red,orange,yellow,green,cyan,blue,violet,red
-    );
-    background-size:400%;
-    animation:rgbText var(--rgb-speed) linear infinite;
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-/* title */
-h1{
-    font-size:1.9rem;
-    margin-bottom:6px;
-}
-
-/* status */
-.status{
-    font-size:.8rem;
-    letter-spacing:1px;
-    margin-bottom:22px;
-}
-
-/* input wrapper */
-.input-wrap{
-    background:#000;
-    border-radius:14px;
-    padding:2px;
-    margin-bottom:16px;
-    border:1px solid #111;
-}
-
-/* input */
-input{
-    width:100%;
-    border:none;
-    outline:none;
-    padding:14px;
-    border-radius:12px;
-    background:#000;
-    color:#fff;
-    text-align:center;
-    font-size:1rem;
-}
-
-input::placeholder{
-    color:#555;
-}
-
-/* button */
-button{
-    width:100%;
-    border:1px solid #111;
-    border-radius:14px;
-    padding:14px;
-    font-size:1rem;
-    font-weight:600;
-    cursor:pointer;
-    background:#000;
-    color:#fff;
-    transition:.2s;
-}
-
-button:hover{
-    background:#111;
-}
-
-/* result */
-#result{
-    margin-top:20px;
-    min-height:60px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:10px;
-}
-
-/* code display */
-.code-display{
-    padding:10px 18px;
-    border-radius:12px;
-    border:1px dashed #222;
-    letter-spacing:4px;
-    cursor:pointer;
-    background:#000;
-}
-
-/* loader */
-.loader{
-    width:28px;
-    height:28px;
-    border:3px solid #222;
-    border-top:3px solid #fff;
-    border-radius:50%;
-    animation:spin 1s linear infinite;
-}
-
-@keyframes spin{
-    to{transform:rotate(360deg)}
-}
-
-/* footer */
-footer{
-    margin-top:18px;
-    font-size:.7rem;
-    color:#555;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>👑 HASHU-MD CONNECT 👑</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     
-/* ===== RGB BORDER INPUT ===== */
+    <style>
+        :root { --bg: #020204; }
+        * { font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--bg); color: #ffffff; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow-x: hidden; position: relative; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        
+        /* Premium Vercel Glass Look */
+        .luxury-card {
+            background: rgba(255, 255, 255, 0.01);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            box-shadow: 0 40px 100px -20px rgba(0,0,0,0.9), inset 0 1px 0 rgba(255,255,255,0.05);
+            border-radius: 2.5rem;
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 32px;
+            position: relative;
+            overflow: hidden;
+        }
 
-@keyframes rgbMove{
-    0%{background-position:0%}
-    100%{background-position:300%}
-}
+        /* Animated Smooth Gradient Borders for Interactive Fields */
+        .neon-input-container {
+            position: relative;
+            border-radius: 1.25rem;
+            padding: 1px;
+            background: linear-gradient(90deg, rgba(123,44,191,0.3), rgba(0,245,255,0.3));
+            transition: all 0.4s ease;
+        }
+        .neon-input-container:focus-within {
+            background: linear-gradient(90deg, #7B2CBF, #00F5FF);
+            box-shadow: 0 0 25px rgba(0,245,255,0.15);
+        }
 
-@keyframes rgbText{
-    0%{background-position:0%}
-    100%{background-position:400%}
-}
-/* =========================================
-   UPDATED RGB NEON RAINBOW CSS
-   ========================================= */
+        .btn-premium {
+            background: linear-gradient(135deg, #7B2CBF, #4A148C);
+            box-shadow: 0 10px 30px rgba(123,44,191,0.25);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-premium:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(123,44,191,0.4);
+            filter: brightness(1.1);
+        }
+        .btn-premium:active {
+            transform: translateY(1px) scale(0.98);
+        }
 
-/* Input Box Container (Tight RGB Border) */
-.rgb-box {
-    padding: 2px; /* Border ki thickness */
-    border-radius: 12px;
-    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, red);
-    background-size: 300%;
-    animation: rgbMove 4s linear infinite;
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto 20px auto;
-}
+        /* Result Code Glow Display */
+        .code-display-box {
+            background: rgba(0, 245, 255, 0.02);
+            border: 1px dashed rgba(0, 245, 255, 0.25);
+            box-shadow: inset 0 0 20px rgba(0,245,255,0.02);
+            transition: all 0.3s ease;
+        }
 
-/* Input Field (Pure Black Background + White Text) */
-.rgb-box input {
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 14px;
-    border-radius: 11px; /* Inner radius slightly smaller than outer */
-    background: #000; /* Pure Black */
-    color: #fff; /* Typing color White */
-    text-align: center;
-    font-size: 1.1rem;
-    font-family: 'Poppins', sans-serif;
-    -webkit-text-fill-color: #fff; /* Ensure text is white */
-}
-
-/* Placeholder Color */
-.rgb-box input::placeholder {
-    color: #555;
-    -webkit-text-fill-color: #555;
-}
-
-/* Get Code Button (Matching Style) */
-.rgb-btn {
-    width: 100%;
-    max-width: 320px;
-    padding: 2px; /* Border space */
-    border-radius: 12px;
-    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, red);
-    background-size: 300%;
-    animation: rgbMove 4s linear infinite;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    transition: transform 0.2s;
-}
-
-/* Inner Button Background */
-.btn-inner {
-    background: #000;
-    color: #fff;
-    display: block;
-    padding: 12px;
-    border-radius: 11px;
-    font-weight: 700;
-    font-size: 1rem;
-    text-transform: uppercase;
-}
-
-.rgb-btn:hover {
-    transform: scale(1.03);
-}
-
-/* Animations */
-@keyframes rgbMove {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 300% 50%; }
-}
-
-@keyframes rgbText {
-    0% { background-position: 0%; }
-    100% { background-position: 400%; }
-}/* Permanent Result Box with RGB Border */
-.result-box {
-    width: 100%;
-    max-width: 320px;
-    margin: 20px auto;
-    padding: 2px; /* Border ki thickness */
-    border-radius: 15px;
-    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, red);
-    background-size: 400%;
-    animation: rgbMove 5s linear infinite;
-    position: relative;
-}
-
-/* Inner Black Area */
-.result-inner {
-    background: #000;
-    border-radius: 13px;
-    padding: 15px;
-    min-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-/* Code Display Styling */
-#codeBox {
-    letter-spacing: 4px;
-    color: #fff;
-    cursor: pointer;
-}
-
-@keyframes rgbMove {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
-}
-
-/* Base Container */
-.rgb-container {
-    padding: 5px; /* Border Thickness */
-    position: relative;
-    border-radius: 15px;
-    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, red, orange, yellow);
-    background-size: 200% 100%;
-    width: 100%;
-    max-width: 320px;
-    margin: 15px auto;
-}
-
-/* 1st & 3rd Box: Right ki taraf chalne wala */
-.move-right {
-    animation: scrollRight 3s linear infinite;
-}
-
-/* 2nd Box: Left ki taraf chalne wala */
-.move-left {
-    animation: scrollLeft 3s linear infinite;
-}
-
-/* Animations Logic */
-@keyframes scrollRight {
-    0% { background-position: 0% 0%; }
-    100% { background-position: 200% 0%; }
-}
-
-@keyframes scrollLeft {
-    0% { background-position: 0% 0%; }
-    100% { background-position: -200% 0%; }
-}
-
-/* Inner Black Box */
-.inner-box {
-    background: #000 !important;
-    color: #fff !important;
-    border-radius: 11px;
-    width: 100%;
-    padding: 14px;
-    border: none;
-    outline: none;
-    text-align: center;
-    font-weight: 600;
-}
-
-/* Sabhi boxes ke liye ek hi permanent style 
-
-
-
-
-/* Click karne par border gayab hone se bachane ke liye */
-.rgb-container:focus-within, 
-.inner-box:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgba(255,255,255,0.1);
-}
-
-@keyframes rgbMove {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
-}
-
-
-
-   
-</style>
+        /* Toast notification trigger animation */
+        .toast-notify {
+            position: fixed;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .toast-notify.active { top: 24px; }
+    </style>
 </head>
 <body>
 
-<div class="card">
+    <div id="copyToast" class="toast-notify px-6 py-3 rounded-full text-xs font-bold tracking-wide text-cyan-400 z-50 flex items-center gap-2">
+        <span class="w-2 h-2 bg-cyan-400 rounded-full animate-ping"></span> SUCCESS: PAIR CODE COPIED!
+    </div>
 
-<h1 class="rgb-text">HASHU-MD CONNECT FREE</h1>
-<h1 class="rgb-text">GET PAIR CODE</h1>
+    <div class="absolute w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-[120px] -top-20 -left-20 pointer-events-none"></div>
+    <div class="absolute w-[400px] h-[400px] bg-cyan-500/5 rounded-full blur-[120px] -bottom-20 -right-20 pointer-events-none"></div>
 
-<p class="status rgb-text">ᴛʏᴘᴇ ʏᴏᴜʀ ᴡʜᴀᴛꜱᴀᴘᴘ ɴᴜᴍʙᴇʀ</p>
-
-<div class="rgb-container move-right">
-    <input type="text" id="number" class="inner-box" placeholder="923237045919">
-</div>
-
-<div class="rgb-container move-left">     <button class="inner-box" onclick="getCode()">GET PAIR CODE</button> </div> 
-
-<div class="rgb-container move-right" id="borderBox" style="display:none;">
-    <div class="inner-box" id="codeBox">----</div>
-</div>
-
-<p class="status rgb-text">WHATSAPP BOT</p>
-
-<p class="status rgb-text">🤍 ᴍᴀᴅᴇ ʙʏ ᴍʀ ʜᴀꜱʜᴜᴜʜ 🤍</p>
-
-<p class="status rgb-text">⚖️ ┃ 𝐃𝐀𝐑𝐊 𝐂𝐘𝐁𝐄𝐑 𝐋𝐄𝐀𝐃𝐄𝐑𝐙</p>
-   
-</div>
-
-
-<script>
-  async function getCode() {
-    const num = document.getElementById("number").value.replace(/[^0-9]/g, '');
-    const codeBox = document.getElementById("codeBox");
-    const borderBox = document.getElementById("borderBox");
-
-    // Agar number khali hai
-    if (!num) {
-        borderBox.style.display = "block"; // Box show karo
-        codeBox.style.letterSpacing = "normal"; // Error ke liye spacing normal
-        codeBox.style.color = "#ff4d4d"; // Error color Red
-        codeBox.innerText = "APNA WHATSAPP NUMBER LIKHE";
-        return;
-    }
-
-    // Loading State
-    borderBox.style.display = "block";
-    codeBox.style.letterSpacing = "normal";
-    codeBox.style.color = "#fff"; 
-    codeBox.innerText = "𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙸𝙽𝙶...";
-
-    try {
-        const res = await fetch(`/code?number=${num}`);
-        const data = await res.json();
+    <div class="luxury-card text-center border-white/5 mx-4">
+        <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-cyan-500 rounded-2xl mx-auto mb-6 flex items-center justify-center shadow-2xl text-3xl font-black tracking-tighter">H</div>
         
-        if (data.code) {
-            codeBox.style.letterSpacing = "4px"; // Code ke liye spacing wapis
-            codeBox.style.color = "#fff"; 
-            codeBox.innerText = data.code;
-        } else {
-            codeBox.style.color = "#ff4d4d";
-            codeBox.innerText = "SERVER FULL";
+        <h1 class="text-2xl font-extrabold tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent">HASHU-MD INSTANCE</h1>
+        <p class="text-[10px] uppercase font-bold tracking-[0.2em] text-cyan-400/80 mt-1 mb-8">Pair Code Sync Hub</p>
+
+        <div class="space-y-4 text-left">
+            <label class="text-[10px] uppercase tracking-widest text-zinc-500 font-bold ml-1">Enter WhatsApp Number</label>
+            <div class="neon-input-container">
+                <input type="text" id="number" placeholder="e.g. 9477xxxxxxx" class="w-full bg-black/60 text-white outline-none px-5 py-4 rounded-[1.2rem] text-center font-semibold tracking-wide placeholder-zinc-700 text-sm">
+            </div>
+            
+            <button onclick="getPairCode()" class="btn-premium w-full text-white font-bold text-sm py-4 rounded-2xl tracking-wide uppercase select-none mt-2">
+                Generate Verification Code
+            </button>
+        </div>
+
+        <div id="borderBox" class="hidden mt-6 animate-fadeIn">
+            <p class="text-[10px] uppercase tracking-widest text-zinc-500 font-bold mb-2">Your Device Pair Code</p>
+            <div onclick="copyPairToClipboard()" id="codeBox" class="code-display-box w-full py-4 rounded-2xl text-center font-bold text-xl tracking-[6px] text-white mono cursor-pointer select-none active:scale-98 transition">
+                ----
+            </div>
+            <p class="text-[9px] text-zinc-500 font-medium mt-2">Click code block above to instantly copy.</p>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-white/5 space-y-1 text-center">
+            <p class="text-[10px] font-bold tracking-wider text-zinc-400 uppercase">WHATSAPP AUTOMATION BOT</p>
+            <p class="text-[9px] text-zinc-600 font-semibold uppercase tracking-widest">Powered by Mr Hashuu Official</p>
+            <p class="text-[8px] tracking-widest text-purple-400/50 font-bold uppercase mt-1">Dark Cyber Leaderz Engine</p>
+        </div>
+    </div>
+
+    <script>
+        async function getPairCode() {
+            // Clean up numbers input structure
+            const num = document.getElementById("number").value.replace(/[^0-9]/g, '');
+            const codeBox = document.getElementById("codeBox");
+            const borderBox = document.getElementById("borderBox");
+
+            if (!num) {
+                borderBox.classList.remove("hidden");
+                codeBox.style.letterSpacing = "normal";
+                codeBox.className = "w-full py-4 rounded-2xl text-center font-bold text-xs border border-red-500/20 bg-red-500/5 text-red-400 mono";
+                codeBox.innerText = "PLEASE PROVIDE A VALID NUMBER";
+                return;
+            }
+
+            // Trigger Loading state frame
+            borderBox.classList.remove("hidden");
+            codeBox.style.letterSpacing = "normal";
+            codeBox.className = "code-display-box w-full py-4 rounded-2xl text-center font-bold text-xs text-zinc-400 mono animate-pulse";
+            codeBox.innerText = "GENERATING SYSTEM PAIR...";
+
+            try {
+                const res = await fetch(`/code?number=${num}`);
+                const data = await res.json();
+                
+                // Switch classes back to standard premium glow style upon loading complete
+                codeBox.className = "code-display-box w-full py-4 rounded-2xl text-center font-bold text-xl tracking-[6px] text-cyan-400 mono cursor-pointer shadow-lg shadow-cyan-500/5";
+                
+                if (data.code) {
+                    codeBox.style.letterSpacing = "6px";
+                    codeBox.innerText = data.code;
+                } else {
+                    codeBox.style.letterSpacing = "normal";
+                    codeBox.className = "w-full py-4 rounded-2xl text-center font-bold text-xs border border-red-500/20 bg-red-500/5 text-red-400 mono";
+                    codeBox.innerText = "SERVER RESOURCE FULL";
+                }
+            } catch (e) {
+                codeBox.style.letterSpacing = "normal";
+                codeBox.className = "w-full py-4 rounded-2xl text-center font-bold text-xs border border-red-500/20 bg-red-500/5 text-red-400 mono";
+                codeBox.innerText = "SERVER CONNECTION IS TIMEOUT";
+            }
         }
-    } catch (e) {
-        codeBox.style.color = "#ff4d4d";
-        codeBox.innerText = "SERVER IS FULL";
-    }
-}
 
-  
+        function copyPairToClipboard() {
+            const codeText = document.getElementById("codeBox").innerText;
+            
+            // Validation block to avoid copying error messages
+            if(codeText.includes("PLEASE") || codeText.includes("GENERATING") || codeText.includes("SERVER")) return;
 
-
-
-
-
-
-function copyCode(code) {
-    navigator.clipboard.writeText(code);
-    const display = document.querySelector('.code-display');
-    const originalText = display.innerText;
-
-    display.innerText = "COPIED";
-    display.style.borderColor = "var(--success)";
-    display.style.color = "var(--success)";
-
-    setTimeout(() => {
-        display.innerText = originalText;
-        display.style.borderColor = "var(--soft)";
-        display.style.color = "var(--soft)";
-    }, 1500);
-}
-
-// Optional: Simple placeholder sound function
-function playSound(type) {
-    // You can add real sounds here later if you want
-}
-</script>
-
+            navigator.clipboard.writeText(codeText);
+            const toast = document.getElementById("copyToast");
+            
+            // Show Apple-style Top Toast overlay
+            toast.classList.add("active");
+            setTimeout(() => {
+                toast.classList.remove("active");
+            }, 2500);
+        }
+    </script>
 </body>
 </html>
