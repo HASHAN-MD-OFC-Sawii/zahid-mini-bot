@@ -34,7 +34,7 @@ cmd({
         const date = moment().tz("Africa/Kampala").format("dddd, DD MMMM YYYY");
 
         // 🎨 Build Menu
-        let menu = `*╭═══ 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪 ═══⊷*\n`;
+        let menu = `*╭═══ 𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪 ═══⊷*\n`;
         menu += `*┃❃╭──────────────*\n`;
         menu += `*┃❃│ ⏰ ᴛɪᴍᴇ: ${time}*\n`;
         menu += `*┃❃│ 📅 ᴅᴀᴛᴇ: ${date}*\n`;
@@ -76,19 +76,19 @@ cmd({
         }
 
         // Footer
-        menu += `*> 𝛲𝜣𝑊𝛯𝑅𝛯𝐷 𝐵𝜳 𝛧𝜟𝛪𝐷𝛪 𝛭𝐷 ᥫ᭡*`;
+        menu += `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀꜱʜᴜ-ᴍᴅ ᴡᴀ ʙᴏᴛ  ᥫ᭡*`;
 
         // Send Menu with Image
         await conn.sendMessage(from, {
-            image: { url: "https://up6.cc/2026/05/177971006919991.png" },
+            image: { url: "https://files.catbox.moe/vbo0vq.png" },
             caption: menu,
             contextInfo: {
                 forwardingScore: 999,
                 isForwarded: true,
                 mentionedJid: [m.sender],
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: "120363423196146172@newsletter",
-                    newsletterName: "𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪",
+                    newsletterJid: "120363395674230271@newsletter",
+                    newsletterName: "𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪",
                     serverMessageId: 2,
                 },
             },
