@@ -36,7 +36,7 @@ cmd({
 ┃❃╰───────────────
 ╰═════════════════⊷
 
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪`;
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀꜱʜᴜ-ᴍᴅ`;
 
       await conn.sendMessage(from, {
         text: display,
@@ -64,7 +64,7 @@ cmd({
 ┃❃╰───────────────
 ╰═════════════════⊷
 
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪`;
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀꜱʜᴜ-ᴍᴅ`;
 
     await conn.sendMessage(from, {
       text: display,
@@ -90,7 +90,7 @@ async function updateBio(conn) {
 
   try {
     const uptime = clockString(process.uptime() * 1000);
-    const botname = config.BOT_NAME || "𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪";
+    const botname = config.BOT_NAME || "𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪";
 
     const bio = `👑 ${botname} ACTIVE (${uptime}) 👑`;
     await conn.updateProfileStatus(bio);
