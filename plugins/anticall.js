@@ -25,7 +25,7 @@ cmd({
 
         const status = args[0]?.toLowerCase();
         const msg = await conn.sendMessage(from, {
-            text: `ᥫ᭡𝛧𝜜𝛪𝐷𝛪 𝛭𝐷 𝐵𝜣𝑇 𓆩 𝐀𝐍𝐓𝐈-𝐂𝐀𝐋𝐋 𓆪 ⏤͟͟͞͞🧸🌷`
+            text: `🤍 𝐇𝐀𝐒𝐇𝐔-𝐌𝐃 𓆩 𝐀𝐍𝐓𝐈-𝐂𝐀𝐋𝐋 𓆪 ⏤͟͟͞͞🧸🌷`
         }, { quoted: mek });
 
         await sleep(1500);
@@ -34,7 +34,7 @@ cmd({
 
         if (status === "on") {
             config.ANTI_CALL = "true";
-            display = `╭═══ 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪 ═══⊷
+            display = `╭═══ 𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪 ═══⊷
 ┃❃╭──────────────
 ┃❃│ 📵 ${toFancy('Anti-Call')}
 ┃❃│ ✅ ${toFancy('Status')}: ${toFancy('Activated')}
@@ -42,10 +42,10 @@ cmd({
 ┃❃╰───────────────
 ╰═════════════════⊷
 
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʑɑ͢ı֟፝𝛛֟ı֟፝-ϻ֟͡𝛛֟`;
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀꜱʜᴜ-ᴍᴅ`;
         } else if (status === "off") {
             config.ANTI_CALL = "false";
-            display = `╭═══ 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪 ═══⊷
+            display = `╭═══ 𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪 ═══⊷
 ┃❃╭──────────────
 ┃❃│ 📵 ${toFancy('Anti-Call')}
 ┃❃│ ❌ ${toFancy('Status')}: ${toFancy('Deactivated')}
@@ -53,9 +53,9 @@ cmd({
 ┃❃╰───────────────
 ╰═════════════════⊷
 
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʑɑ͢ı֟፝𝛛֟ı֟፝-ϻ֟͡𝛛֟`;
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀꜱʜᴜ-ᴍᴅ`;
         } else {
-            display = `╭═══ 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪 ═══⊷
+            display = `╭═══ 𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪 ═══⊷
 ┃❃╭──────────────
 ┃❃│ 📵 ${toFancy('Anti-Call')}
 ┃❃│ ⚠️ ${toFancy('Invalid Option')}
@@ -63,7 +63,7 @@ cmd({
 ┃❃╰───────────────
 ╰═════════════════⊷
 
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʑɑ͢ı֟፝𝛛֟ı֟፝-ϻ֟͡𝛛֟`;
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴀꜱʜᴜ-ᴍᴅ`;
         }
 
         await conn.relayMessage(from, {
