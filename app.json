@@ -1,5 +1,5 @@
 {
-  "name": "♥️𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪 PAIR♥️",
+  "name": "♥️𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪 PAIR♥️",
   "description": "SESSION ID GENERATOR FOR WHATSAPP BOTS",
   "logo": "https://files.catbox.moe/himp43.jpg",
   "repository": "https://github.com/me9900-say/AZmini",
@@ -11,7 +11,7 @@
   "env": {      
     "MESSAGE": {
       "description": "Msg Attached With Session ID",
-      "value": "🔰 BY || 𓆩𝐙𝐀𝐈𝐃𝐈-𝐌𝐃𓆪 OFFICIAL 🔰",
+      "value": "🔰 BY || 𓆩𝐇𝐀𝐒𝐇𝐔-𝐌𝐃𓆪 OFFICIAL 🔰",
       "required": false 
     }
   }
